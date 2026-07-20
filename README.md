@@ -15,7 +15,7 @@ The project demonstrates how relational database design can be applied to biomed
 The normalized SQLite database consists of eight related tables connected through primary and foreign keys. The schema minimizes data redundancy while enabling flexible SQL queries across studies, sponsors, interventions, conditions, and study locations.
 
 <p align="center">
-  <img src="../figures/er_diagram.svg" width="850">
+  <img src="figures/er_diagram.svg" width="850">
 </p>
 
 ---
