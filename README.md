@@ -189,4 +189,4 @@ Biology undergraduate building data-driven solutions for biomedical research, cl
 
 [GitHub](https://github.com/marialuzacevedo)
 
-LinkedIn: https://www.linkedin.com/in/marialuzacevedo 
+[LinkedIn] (https://www.linkedin.com/in/marialuzacevedo) 
