@@ -1,3 +1,5 @@
+data/raw_trials.json 
+
 # Jupyter
 .ipynb_checkpoints/
 
@@ -11,3 +13,4 @@ __pycache__/
 # Entornos virtuales
 .venv/
 venv/
+data/raw_trials.json
