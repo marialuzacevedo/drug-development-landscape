@@ -10,6 +10,18 @@ The project demonstrates how relational database design can be applied to biomed
 
 ---
 
+## Technologies
+
+* Python
+* Pandas
+* SQLite
+* SQL
+* ClinicalTrials.gov API
+* Matplotlib
+* Jupyter Notebook
+
+---
+
 ## Database Schema
 
 The normalized SQLite database consists of nine related tables connected through primary and foreign keys. The schema minimizes data redundancy while enabling flexible SQL queries across studies, sponsors, interventions, conditions, and locations.
@@ -152,18 +164,6 @@ The analysis also highlighted the prominent role of both public research organiz
 Among active drug interventions, Cyclophosphamide was the most frequently investigated medication, followed by Cisplatin, Bevacizumab, Carboplatin, Dexamethasone, and Pembrolizumab. The predominance of established oncology therapies suggests that cancer research represents a substantial component of the analyzed dataset, while the presence of drugs such as Metformin highlights the diversity of therapeutic areas represented.
 
 Finally, the project demonstrated the value of relational database design for biomedical data analysis. By combining multiple normalized tables through SQL joins and aggregate functions, it was possible to answer complex research questions involving sponsors, diseases, and therapeutic interventions. This workflow illustrates how database normalization enables scalable, flexible, and reproducible clinical research analyses.
-
----
-
-## Technologies
-
-* Python
-* Pandas
-* SQLite
-* SQL
-* ClinicalTrials.gov API
-* Matplotlib
-* Jupyter Notebook
 
 ---
 
