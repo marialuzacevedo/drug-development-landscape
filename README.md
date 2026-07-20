@@ -187,6 +187,6 @@ Potential extensions of this project include:
 
 Biology undergraduate building data-driven solutions for biomedical research, clinical trial analysis and pharmaceutical development.
 
-[GitHub](https://github.com/marialuzacevedo)
+GitHub: https://github.com/marialuzacevedo
 
-[LinkedIn] (https://www.linkedin.com/in/marialuzacevedo) 
+LinkedIn: https://www.linkedin.com/in/marialuzacevedo 
