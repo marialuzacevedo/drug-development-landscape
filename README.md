@@ -2,11 +2,19 @@
 
 ## Overview
 
-This project explores 5,000 clinical studies retrieved from the ClinicalTrials.gov API by building a normalized SQLite relational database and performing SQL-based exploratory analyses.
+This project explores a subset of 5,000 clinical studies retrieved from the ClinicalTrials.gov API by building a normalized SQLite relational database and performing SQL-based exploratory analyses.
 
 The workflow includes automated data collection through the ClinicalTrials.gov API, transformation of nested JSON data into structured tables, database normalization, and analytical SQL queries to investigate clinical trial phases, sponsors, therapeutic interventions, and disease indications.
 
 The project demonstrates how relational database design can be applied to biomedical research data to answer complex research questions efficiently while minimizing data redundancy.
+
+---
+
+## Data Source
+
+Clinical trial records were retrieved from the ClinicalTrials.gov API.
+
+The original API response is not included in the repository due to file size limitations. The dataset can be reproduced by running the data collection notebook.
 
 ---
 
@@ -29,14 +37,6 @@ The normalized SQLite database consists of nine related tables connected through
 <p align="center">
   <img src="figures/er_diagram.svg" width="850">
 </p>
-
----
-
-## Data Source
-
-Clinical trial records were retrieved from the ClinicalTrials.gov API.
-
-The original API response is not included in the repository due to file size limitations. The dataset can be reproduced by running the data collection notebook.
 
 ---
 
@@ -133,23 +133,26 @@ The SQL analysis addressed several research questions:
 ## Results
 
 ### Clinical Phase Distribution
-The distribution of clinical studies was concentrated in Phase II and Phase I trials, reflecting the high volume of early-stage clinical development activities. Phase I studies primarily evaluate safety and dose optimization, while Phase II trials provide preliminary evidence of efficacy and continue safety assessment.
 
 ![Phase distribution](figures/clinical_trial_phase_distribution.png)
+
+The distribution of clinical studies was concentrated in Phase II and Phase I trials, reflecting the high volume of early-stage clinical development activities. Phase I studies primarily evaluate safety and dose optimization, while Phase II trials provide preliminary evidence of efficacy and continue safety assessment.
 
 ---
 
 ### Top Clinical Trial Sponsors
-The sponsor analysis revealed a combination of academic institutions, governmental organizations, and pharmaceutical companies as major contributors to clinical research. The National Cancer Institute (NCI) was among the most represented sponsors, highlighting the importance of large-scale oncology research programs, while companies such as Pfizer, AstraZeneca, and GlaxoSmithKline demonstrated substantial involvement in clinical development.
 
 ![Top Sponsors](figures/top_sponsors.png)
+
+The sponsor analysis revealed a combination of academic institutions, governmental organizations, and pharmaceutical companies as major contributors to clinical research. The National Cancer Institute (NCI) was among the most represented sponsors, highlighting the importance of large-scale oncology research programs, while companies such as Pfizer, AstraZeneca, and GlaxoSmithKline demonstrated substantial involvement in clinical development.
 
 ---
 
 ### Most Frequently Investigated Drug Interventions
-The most frequently investigated interventions included established oncology therapies such as Cyclophosphamide, Cisplatin, Bevacizumab, and Pembrolizumab. The prevalence of these drugs reflects the strong representation of cancer-related studies within the analyzed dataset and illustrates how clinical trial databases capture both emerging therapies and established treatment approaches.
 
 ![Top Interventions](figures/top_drug_interventions.png)
+
+The most frequently investigated interventions included established oncology therapies such as Cyclophosphamide, Cisplatin, Bevacizumab, and Pembrolizumab. The prevalence of these drugs reflects the strong representation of cancer-related studies within the analyzed dataset and illustrates how clinical trial databases capture both emerging therapies and established treatment approaches.
 
 ---
 
@@ -163,7 +166,7 @@ The analysis also highlighted the prominent role of both public research organiz
 
 Among active drug interventions, Cyclophosphamide was the most frequently investigated medication, followed by Cisplatin, Bevacizumab, Carboplatin, Dexamethasone, and Pembrolizumab. The predominance of established oncology therapies suggests that cancer research represents a substantial component of the analyzed dataset, while the presence of drugs such as Metformin highlights the diversity of therapeutic areas represented.
 
-Finally, the project demonstrated the value of relational database design for biomedical data analysis. By combining multiple normalized tables through SQL joins and aggregate functions, it was possible to answer complex research questions involving sponsors, diseases, and therapeutic interventions. This workflow illustrates how database normalization enables scalable, flexible, and reproducible clinical research analyses.
+Finally, the project demonstrated the value of relational database design for biomedical data analysis. By combining multiple normalized tables through SQL joins and aggregate functions, it was possible to answer complex research questions involving sponsors, diseases, and therapeutic interventions. This workflow illustrates how database normalization enables scalable, flexible, and reproducible clinical data analyses.
 
 ---
 
@@ -171,18 +174,18 @@ Finally, the project demonstrated the value of relational database design for bi
 
 Potential extensions of this project include:
 
+* Automated ETL pipeline for periodic ClinicalTrials.gov updates.
+* Therapeutic area classification of interventions.
 * Geographic analysis of clinical trial locations.
 * Interactive dashboards using Power BI or Tableau.
-* Integration with additional biomedical databases.
-* Automated ETL pipeline for periodic ClinicalTrials.gov updates.
 * Natural language processing of study titles and conditions.
-* Therapeutic area classification of interventions.
+* Integration with additional biomedical databases.
 
 ---
 
 ## Author
 
-Biology undergraduate building data-driven solutions for biomedical research, clinical trials analysis and pharmaceutical development.
+Biology undergraduate building data-driven solutions for biomedical research, clinical trial analysis and pharmaceutical development.
 
 [GitHub](https://github.com/marialuzacevedo)
 
