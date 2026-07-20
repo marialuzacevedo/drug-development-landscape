@@ -12,11 +12,19 @@ The project demonstrates how relational database design can be applied to biomed
 
 ## Database Schema
 
-The normalized SQLite database consists of eight related tables connected through primary and foreign keys. The schema minimizes data redundancy while enabling flexible SQL queries across studies, sponsors, interventions, conditions, and study locations.
+The normalized SQLite database consists of nine related tables connected through primary and foreign keys. The schema minimizes data redundancy while enabling flexible SQL queries across studies, sponsors, interventions, conditions, and locations.
 
 <p align="center">
   <img src="figures/er_diagram.svg" width="850">
 </p>
+
+---
+
+## Data Source
+
+Clinical trial records were retrieved from the ClinicalTrials.gov API.
+
+The original API response is not included in the repository due to file size limitations. The dataset can be reproduced by running the data collection notebook.
 
 ---
 
@@ -66,6 +74,13 @@ Relationship tables were used to model many-to-many associations between studies
 
 SQL queries were used to explore the clinical trial landscape through descriptive and relational analyses.
 
+Examples of queries performed:
+
+- Aggregation of trials by clinical phase.
+- Sponsor ranking using JOIN operations.
+- Intervention frequency analysis.
+- Disease-intervention relationships using many-to-many relationships.
+
 ---
 
 ## Repository Structure
@@ -106,18 +121,21 @@ The SQL analysis addressed several research questions:
 ## Results
 
 ### Clinical Phase Distribution
+The distribution of clinical studies was concentrated in Phase II and Phase I trials, reflecting the high volume of early-stage clinical development activities. Phase I studies primarily evaluate safety and dose optimization, while Phase II trials provide preliminary evidence of efficacy and continue safety assessment.
 
 ![Phase distribution](figures/clinical_trial_phase_distribution.png)
 
 ---
 
 ### Top Clinical Trial Sponsors
+The sponsor analysis revealed a combination of academic institutions, governmental organizations, and pharmaceutical companies as major contributors to clinical research. The National Cancer Institute (NCI) was among the most represented sponsors, highlighting the importance of large-scale oncology research programs, while companies such as Pfizer, AstraZeneca, and GlaxoSmithKline demonstrated substantial involvement in clinical development.
 
 ![Top Sponsors](figures/top_sponsors.png)
 
 ---
 
 ### Most Frequently Investigated Drug Interventions
+The most frequently investigated interventions included established oncology therapies such as Cyclophosphamide, Cisplatin, Bevacizumab, and Pembrolizumab. The prevalence of these drugs reflects the strong representation of cancer-related studies within the analyzed dataset and illustrates how clinical trial databases capture both emerging therapies and established treatment approaches.
 
 ![Top Interventions](figures/top_drug_interventions.png)
 
@@ -154,17 +172,18 @@ Finally, the project demonstrated the value of relational database design for bi
 Potential extensions of this project include:
 
 * Geographic analysis of clinical trial locations.
-* Classification of interventions into therapeutic classes.
-* Time-series analysis of clinical trial activity.
 * Interactive dashboards using Power BI or Tableau.
 * Integration with additional biomedical databases.
+* Automated ETL pipeline for periodic ClinicalTrials.gov updates.
+* Natural language processing of study titles and conditions.
+* Therapeutic area classification of interventions.
 
 ---
 
 ## Author
 
-Biology undergraduate with interests in Clinical Research, Clinical Data Analytics and Bioinformatics.
+Biology undergraduate building data-driven solutions for biomedical research, clinical trials analysis and pharmaceutical development.
 
-GitHub: https://github.com/marialuzacevedo
+[GitHub](https://github.com/marialuzacevedo)
 
 LinkedIn: https://www.linkedin.com/in/marialuzacevedo 
