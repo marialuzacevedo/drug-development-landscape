@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+:root {
+
+    --primary: #142D34;
+
+    --background: #EEF3F7;
+
+    --card: #FFFFFF;
+
+    --text: #337687;
+
+    --text-light: #9CA3AF;
+
+    --radius: 16px;
+
+    --shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+
+}
+
+body {
+
+    font-family: 'Manrope', sans-serif;
+
+    background-color: var(--background);
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.dashboard-title {
+    color: var(--primary);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.kpi-card {
+
+    background-color: var(--card);
+
+    border-radius: var(--radius);
+
+    padding: 24px;
+
+    width: 200px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.kpi-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0px 12px 30px rgba(0,0,0,0.10);
+
+}
+
+.kpi-number {
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    color: var(--text);
+
+    margin: 0;
+
+    letter-spacing: -1px;
+
+}
+
+
+.kpi-title {
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    color: var(--text-light);
+
+    margin-top: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+}
+
+.kpi-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin-bottom: 40px;
+
+    
+
+    justify-items: center;
+
+}
+
+.dashboard-subtitle {
+
+    color: var(--text-light);
+
+    font-size: 20px;
+
+    margin-top: 10px;
+
+    margin-bottom: 40px;
+
+    font-weight: 400;
+
+}
+
+.filter-container {
+
+    width: 80%;
+
+    margin: 30px auto 50px auto;
+
+}
+
+.filter-label {
+
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: var(--primary);
+
+    margin-bottom: 10px;
+
+}
+
+.dropdown {
+
+    font-family: 'Manrope', sans-serif;
+
+    border-radius: var(--radius);
+
+}
+
+
+.graph-card {
+
+    flex: 1;
+
+    background-color: var(--card);
+
+    border-radius: var(--radius);
+
+    padding: 30px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.graph-card {
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+
+}
+
+.graph-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.10);
+
+} 
+
+.graph-title {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: var(--primary);
+
+    margin-bottom: 10px;
+
+}
+
+.dashboard { 
+	max-width: 1500px;
+	margin: auto;
+	padding: 40px;
+ }
+
+.graph-row { 
+	display: flex; 
+	gap: 30px; 
+	margin-bottom: 30px;
+} 
+
+.map-card { 
+	margin-bottom: 30px; 
+} 
+
+.placeholder { 
+	height: 250px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	color: var(--text-light); 
+	font-size: 14px; 
+	border: 1px dashed #D1D5DB; 
+	border-radius: 12px; 
+} 
+
+.map-placeholder { 
+	height: 400px; 
+} 
+
+.single-graph {
+
+    margin-bottom: 30px;
+
+}
+
+.dashboard-footer {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding-bottom: 20px;
+
+}
+
+
+.footer-text {
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+    font-weight: 400;
+
+}

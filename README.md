@@ -1,4 +1,4 @@
-# Drug Development Landscape: Relational Database Analysis of ClinicalTrials.gov Studies
+# Drug Development Landscape: Clinical Trial Analytics Platform Using SQL and Python
 
 ## Overview
 
@@ -6,7 +6,9 @@ This project explores a subset of 5,000 clinical studies retrieved from the Clin
 
 The workflow includes automated data collection through the ClinicalTrials.gov API, transformation of nested JSON data into structured tables, database normalization, and analytical SQL queries to investigate clinical trial phases, sponsors, therapeutic interventions, and disease indications.
 
-The project demonstrates how relational database design can be applied to biomedical research data to answer complex research questions efficiently while minimizing data redundancy.
+The project also includes a clinical trial intelligence dashboard developed with Plotly Dash, providing visual exploration of clinical trial phases, therapeutic areas, sponsors, recruitment status, enrollment patterns, and global study locations.
+
+This demonstrates how relational database design can be applied to biomedical research data to answer complex research questions efficiently while minimizing data redundancy.
 
 ---
 
@@ -27,6 +29,9 @@ The original API response is not included in the repository due to file size lim
 * ClinicalTrials.gov API
 * Matplotlib
 * Jupyter Notebook
+* Plotly
+* Dash
+* SQLAlchemy
 
 ---
 
@@ -94,6 +99,30 @@ Examples of queries performed:
 - Disease-intervention relationships using many-to-many relationships.
 
 ---
+
+## Interactive Dashboard
+
+A web-based clinical trial intelligence dashboard was developed using Plotly Dash to visualize the clinical trial landscape contained in the relational database.
+
+The dashboard integrates SQL-derived metrics and interactive visualizations to explore:
+
+* Clinical trial distribution across development phases.
+* Most frequently investigated therapeutic areas.
+* Leading clinical trial sponsors.
+* Sponsor type distribution.
+* Recruitment status patterns.
+* Average enrollment by clinical phase.
+* Global distribution of clinical trial locations.
+
+The dashboard was built using:
+
+* Python
+* Plotly
+* Dash
+* SQLAlchemy
+* SQLite
+
+--- 
 
 ## Repository Structure
 
@@ -174,13 +203,13 @@ Finally, the project demonstrated the value of relational database design for bi
 
 Potential extensions of this project include:
 
+* Deployment of the Dash dashboard as a public web application.
 * Automated ETL pipeline for periodic ClinicalTrials.gov updates.
-* Therapeutic area classification of interventions.
-* Geographic analysis of clinical trial locations.
-* Interactive dashboards using Power BI or Tableau.
+* Therapeutic area classification of interventions. 
 * Natural language processing of study titles and conditions.
 * Integration with additional biomedical databases.
-
+* Migration of the analytical workflow to business intelligence platforms such as Power BI or Tableau.
+ 
 ---
 
 ## Author
