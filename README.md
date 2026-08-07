@@ -32,6 +32,8 @@ The original API response is not included in the repository due to file size lim
 * Plotly
 * Dash
 * SQLAlchemy
+* Gunicorn
+* Render
 
 ---
 
@@ -121,6 +123,15 @@ The dashboard was built using:
 * Dash
 * SQLAlchemy
 * SQLite
+* Gunicorn
+* Render
+
+<p align="center">
+  <img src="figures/dashboard_preview.png" width="900">
+</p>
+
+Explore the interactive clinical trial analytics dashboard:
+[https://drug-development-landscape.onrender.com/]
 
 --- 
 
@@ -203,12 +214,12 @@ Finally, the project demonstrated the value of relational database design for bi
 
 Potential extensions of this project include:
 
-* Deployment of the Dash dashboard as a public web application.
+
 * Automated ETL pipeline for periodic ClinicalTrials.gov updates.
-* Therapeutic area classification of interventions. 
-* Natural language processing of study titles and conditions.
-* Integration with additional biomedical databases.
-* Migration of the analytical workflow to business intelligence platforms such as Power BI or Tableau.
+* Therapeutic area classification using NLP.
+* Drug-target and indication relationship analysis.
+* Machine learning models for clinical trial outcome prediction.
+* Integration with additional biomedical databases. 
  
 ---
 
