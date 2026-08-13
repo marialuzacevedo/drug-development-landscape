@@ -130,8 +130,7 @@ The dashboard was built using:
   <img src="figures/dashboard_preview.png" width="900">
 </p>
 
-Explore the interactive clinical trial analytics dashboard:
-[https://drug-development-landscape.onrender.com/]
+Explore the interactive clinical trial analytics dashboard: [Live Dashboard](https://drug-development-landscape.onrender.com/)
 
 --- 
 
